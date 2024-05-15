@@ -19,3 +19,15 @@ syncthing
 wget
 yay
 monero-gui
+
+---
+# SETUP
+---
+go
+openssh
+ttf-mononoki-nerd
+xorg-randr
+xorg-xinput
+
+pulseaudio
+pavucontrol
