@@ -31,3 +31,6 @@ xorg-xinput
 
 pulseaudio
 pavucontrol
+
+
+mkinitcpio-firmware - (AUR) - Fixes mkinitcpio warning messages
