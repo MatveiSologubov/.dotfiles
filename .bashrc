@@ -8,5 +8,6 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias pacc='sudo pacman -Syu && yay && sudo pacman -Rns $(sudo pacman -Qtdq); paccache -r'
-alias comp='cd /home/disco/dwm && sudo make clean install && cd ../st && sudo make clean install'
+alias comp='cd ~/dwm && sudo make clean install && cd ../st && sudo make clean install'
+alias yt-best='yt-dlp --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best"'
 PS1='[\u@\h \W]\$ '
