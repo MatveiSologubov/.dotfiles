@@ -9,6 +9,8 @@ rofi
 ---
 
 maim - For screenshots
+calibre - Book manager 
+virt manager & qemu - vm software #TODO create setup scrip 
 
 keepassxc - pass manager
 kleopatra - pgp manager
@@ -21,6 +23,8 @@ syncthing
 wget
 yay
 monero-gui
+dolphin - file manager 
+ranger - another file manager (need to switch to fl and add setup script)
 
 ---
 # SETUP
