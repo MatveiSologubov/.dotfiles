@@ -1,0 +1,3 @@
+sudo pacman -Syu xlockmore maim calibre keepassxc kleopatra obsidian qbittorrent tmux tor telegram-desktop syncthing wget dolphin ranger openssh dosfstools gdu man-db pacman-contrib pavucontrol plocate proxychains-ng pulseaudio sxiv thunderbird torbrowser-launcher ttf-jetbrains-mono-nerd unzip vlc wol xclip xdotool yt-dlp nvidia
+
+yay -S brave-bin librewolf-bin obfs4proxy-bin rustdesk-bin 
