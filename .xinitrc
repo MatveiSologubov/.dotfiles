@@ -1,4 +1,2 @@
-xrandr --output HDMI-1 --primary --mode 1920x1080 --output DVI-D-1 --mode 1680x1050 --right-of HDMI-1
-
+xrandr --output DP-2 --primary --mode 2560x1440 --rate 100 --output HDMI-0 --mode 1920x1080 --right-of DP-2
 exec dwm
-
