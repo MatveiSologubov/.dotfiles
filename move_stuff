@@ -9,3 +9,5 @@ sudo cp ~/.dotfiles/xorg.conf /etc/X11/xorg.conf.d/
 #Maimpick
 cp ~/.dotfiles/maimpick ~/.dotfiles/maimpick-sel /usr/bin/.
 
+#Bash
+cp ~/.dotfiles/.bashrc ~
