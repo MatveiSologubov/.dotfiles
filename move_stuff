@@ -1,0 +1,11 @@
+#Rofi
+mkdir ~/.config/rofi 
+cp ~/.dotfiles/config.rasi ~/.config/rofi/.
+
+#Xorg
+sudo mkdir /etc/X11/xorg.conf.d
+sudo cp ~/.dotfiles/xorg.conf /etc/X11/xorg.conf.d/
+
+#Maimpick
+cp ~/.dotfiles/maimpick ~/.dotfiles/maimpick-sel /usr/bin/.
+
