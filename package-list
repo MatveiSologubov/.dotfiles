@@ -35,6 +35,8 @@ rofi
 smartmontools
 sxiv
 syncthing
+texlive
+texlive-langcyrillic
 thunderbird
 tmux
 torbrowser-launcher
@@ -53,6 +55,7 @@ yt-dlp
 zathura
 
 ====YAY====
+anki
 brave-bin
 cura-bin
 librewolf-bin
