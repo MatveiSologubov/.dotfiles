@@ -1,0 +1,9 @@
+set ignorecase true
+set icons true
+
+# Movement
+map gz cd /media/m2/Users/matth/zona/
+map gt cd /tmp/
+map gr cd /
+map gl cd ~/labs/
+map gd cd ~/docs/
