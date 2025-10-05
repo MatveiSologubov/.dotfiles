@@ -1,4 +1,4 @@
-cd 
+cd $HOME
 cd dwm 
 sudo make clean install 
 cd ../st 

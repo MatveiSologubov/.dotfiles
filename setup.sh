@@ -280,8 +280,7 @@ main() {
     stow_home
 
     # Setup root directory
-    # TODO
-    # setup_root
+    # TODO: Create setup-root script
 
     # Run custom scripts
     run_scripts
