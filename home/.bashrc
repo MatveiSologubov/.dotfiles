@@ -12,11 +12,28 @@ export HISTFILESIZE=-1
 export HISTSIZE=-1
 shopt -s histappend
 
+# Cleanup
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
+alias adb='HOME="$XDG_DATA_HOME"/android adb'
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
+export NPM_CONFIG_INIT_MODULE="$XDG_CONFIG_HOME"/npm/config/npm-init.js
+export NPM_CONFIG_CACHE="$XDG_CACHE_HOME"/npm
+export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR"/npm
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+
 #Android SDK
-export ANDROID_SDK_ROOT=/home/disco/Android/Sdk
+export ANDROID_SDK_ROOT="$HOME/.local/share/android-sdk"
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools/bin"
 
+# Sessionizer
+PATH="$PATH":"$HOME/.local/scripts/"
+bind '"\C-f":"tmux-sessionizer\n"'
 
 alias ls='ls --color=auto'
 alias df='df -h'
@@ -27,7 +44,7 @@ alias pacc='sudo pacman -Syu && yay && sudo pacman -Rns $(sudo pacman -Qtdq); pa
 alias sc='sudo pacman -Sc && yay -Sc'
 alias comp='cd ~/dwm && sudo make clean install && cd ../st && sudo make clean install'
 alias yt-best='yt-dlp --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --extractor-args "youtube:player-client=default,tv_simply"'
-alias yt-mid='yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --extractor-args "youtube:player-client=default,tv_simply"'
+alias yt-mid='yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --extractor-args "youtube:player-client=default,tv_simply" --embed-subs --embed-thumbnail --embed-metadata'
 alias ss='ssh -p 640 disco@192.168.1.112'
 
 PS1='[\u@\h \W]\$ '
