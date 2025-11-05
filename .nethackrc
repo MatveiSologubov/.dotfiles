@@ -1,0 +1,7 @@
+#OPTIONS=role:Val,race:Dwa,gender:Fem,align:Law
+OPTIONS=!tutorial
+OPTIONS=boulder:0, color, hilite_pile, hitpointbar, msg_window:reversed, msghistory:1000, pickup_burden:unencumbered
+OPTIONS=autopickup,pickup_types:$!/="+?
+OPTIONS=showexp,time
+OPTIONS=sortloot:full
+OPTIONS=statuslines:3
