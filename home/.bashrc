@@ -44,7 +44,10 @@ alias pacc='sudo pacman -Syu && yay && sudo pacman -Rns $(sudo pacman -Qtdq); pa
 alias sc='sudo pacman -Sc && yay -Sc'
 alias comp='cd ~/dwm && sudo make clean install && cd ../st && sudo make clean install'
 alias yt-best='yt-dlp --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --extractor-args "youtube:player-client=default,tv_simply"'
-alias yt-mid='yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --extractor-args "youtube:player-client=default,tv_simply" --embed-subs --embed-thumbnail --embed-metadata'
+alias yt-mid='yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --extractor-args "youtube:player-client=default,tv_simply" --embed-subs --embed-thumbnail --embed-metadata --write-description'
+alias yt-tor='yt-dlp --proxy socks://127.0.0.1:9150 -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --extractor-args "youtube:player-client=default,tv_simply" --embed-subs --embed-thumbnail --embed-metadata --write-description'
+
+
 alias ss='ssh -p 640 disco@192.168.1.112'
 
 PS1='[\u@\h \W]\$ '
