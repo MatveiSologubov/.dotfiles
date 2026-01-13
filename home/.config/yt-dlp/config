@@ -1,0 +1,16 @@
+--abort-on-error
+--abort-on-unavailable-fragments
+
+--write-description
+
+--embed-subs
+--embed-thumbnail
+--embed-metadata
+
+
+# -R, --retries RETRIES           Number of retries (default is 10), or "infinite"
+# --file-access-retries RETRIES   Number of times to retry on file access
+#                                 error (default is 3), or "infinite"
+# --fragment-retries RETRIES      Number of retries for a fragment (default is
+#                                 10), or "infinite" (DASH, hlsnative and ISM)
+# --retry-sleep [TYPE:]EXPR       Time to sleep between retries in seconds
