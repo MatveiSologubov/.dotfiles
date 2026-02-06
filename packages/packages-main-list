@@ -48,7 +48,6 @@ plocate
 proxychains-ng
 python-pip
 qbittorrent
-qemu-full
 rofi
 rsync
 smartmontools
@@ -66,8 +65,6 @@ unrar
 unzip
 vde2
 vim
-virt-manager
-virt-viewer
 vlc
 vlc-plugins-all
 webkit2gtk
