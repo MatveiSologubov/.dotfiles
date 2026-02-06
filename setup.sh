@@ -185,11 +185,6 @@ install_aur_packages() {
     fi
 }
 
-# Function to stow home directory
-stow_home() {
-    #TODO: Fix this shit
-}
-
 # Function to run custom scripts
 run_scripts() {
     if [[ ! -d "scripts" ]]; then
@@ -223,27 +218,12 @@ run_scripts() {
     log_success "All scripts executed"
 }
 
-# Function to verify stow is installed
-verify_stow() {
-    if ! command -v stow &> /dev/null; then
-        log_info "Installing stow..."
-        if check_root; then
-            pacman -Sy stow --noconfirm
-        else
-            sudo pacman -Sy stow --noconfirm
-        fi
-    fi
-}
-
 # Main execution function
 main() {
     log_info "Starting dotfiles setup..."
 
     # Select PC configuration
     select_pc_config
-
-    # Verify stow is installed
-    verify_stow
 
     # Install pacman packages
     install_pacman_packages
@@ -255,9 +235,6 @@ main() {
     else
         log_warning "Running as root, skipping AUR packages (yay requires regular user)"
     fi
-
-    # Setup home directory with stow
-    stow_home
 
     # Setup root directory
     # TODO: Create setup-root script
