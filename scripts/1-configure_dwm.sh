@@ -1,4 +1,4 @@
-sudo pacman -Syu xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk dmenu
+sudo pacman -Syu --needed xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk dmenu
 
 cd $HOME
 
