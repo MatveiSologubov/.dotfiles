@@ -187,27 +187,7 @@ install_aur_packages() {
 
 # Function to stow home directory
 stow_home() {
-    if [[ ! -d "home" ]]; then
-        log_error "home directory not found!"
-        return 1
-    fi
-
-    log_info "Setting up home directory symlinks with stow..."
-
-    # Navigate to home directory and stow all packages
-    cd home
-
-    # Find all directories and stow them
-    for dir in */; do
-        if [[ -d "$dir" ]]; then
-            log_info "Stowing ${dir%/}"
-            stow --target="$HOME" --restow "${dir%/}"
-        fi
-    done
-
-    cd ..
-
-    log_success "Home directory symlinks created"
+    #TODO: Fix this shit
 }
 
 # Function to run custom scripts
