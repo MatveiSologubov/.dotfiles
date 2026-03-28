@@ -39,6 +39,7 @@ bind '"\C-f":"tmux-sessionizer\n"'
 alias ls='ls --color=auto'
 alias df='df -h'
 alias du='du -h'
+alias wget='wget --continue'
 
 alias grep='grep --color=auto'
 alias pacc='sudo pacman -Syu && yay && sudo pacman -Rns $(sudo pacman -Qtdq); paccache -r'
