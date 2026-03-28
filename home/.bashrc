@@ -48,6 +48,7 @@ alias comp='cd ~/dwm && sudo make clean install && cd ../st && sudo make clean i
 alias yt-best='yt-dlp --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best"'
 alias yt-mid='yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
 alias yt-tor='yt-dlp --proxy socks://127.0.0.1:9150 -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
+alias yt-torc='yt-dlp --proxy socks://127.0.0.1:9150 -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --cookies-from-browser firefox'
 
 
 alias ss='ssh -p 640 disco@192.168.1.112'
