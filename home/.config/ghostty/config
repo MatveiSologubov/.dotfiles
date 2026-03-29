@@ -1,0 +1,11 @@
+gtk-tabs-location = hidden
+
+window-decoration = server
+
+gtk-titlebar = false
+
+theme = TokyoNight Night 
+
+shell-integration-features = no-cursor
+
+confirm-close-surface = false
