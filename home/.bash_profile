@@ -19,6 +19,7 @@ if [ -z "$TMUX" ] && { [ -n "$SSH_TTY" ] || [ "${TERM%%-*}" = "linux" ]; } then
     fi
 fi
 
-startx
-
+if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+    startx
+fi
 
