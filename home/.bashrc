@@ -27,6 +27,8 @@ export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR"/npm
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export GDBINIT="$HOME/.config/gdb/init"
 
+export NETHACKDIR="/home/disco/.local/share/nethack"
+
 # Sessionizer
 PATH="$PATH":"$HOME/.local/scripts/"
 bind '"\C-f":"tmux-sessionizer\n"'
