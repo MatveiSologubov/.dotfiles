@@ -5,3 +5,5 @@ OPTIONS=autopickup,pickup_types:$!/="+?
 OPTIONS=showexp,time
 OPTIONS=sortloot:full
 OPTIONS=statuslines:3
+
+OPTIONS=catname:Cookie
