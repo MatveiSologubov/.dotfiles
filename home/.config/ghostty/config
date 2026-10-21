@@ -9,3 +9,10 @@ theme = TokyoNight Night
 shell-integration-features = no-cursor
 
 confirm-close-surface = false
+
+app-notifications = false
+
+clipboard-paste-protection = false
+
+clipboard-read = allow
+clipboard-write = allow
