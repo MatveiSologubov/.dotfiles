@@ -28,9 +28,10 @@ export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export GDBINIT="$HOME/.config/gdb/init"
 
 export NETHACKDIR="/home/disco/.local/share/nethack"
+export HACKDIR="/home/disco/.local/share/nethack"
 
-# Sessionizer
 PATH="$PATH":"$HOME/.local/scripts/"
+PATH="$PATH":"$HOME/.local/bin/"
 PATH="$PATH":"$HOME/.local/share/cargo/bin/"
 
 bind '"\C-f":"tmux-sessionizer\n"'
